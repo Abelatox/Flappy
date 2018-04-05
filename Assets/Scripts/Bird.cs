@@ -25,7 +25,8 @@ public class Bird : MonoBehaviour {
 
     // Update is called once per frame
     private void Update () {
-        if (isDead) return;
+        if (isDead)
+            return;
         
         if (Input.GetMouseButtonDown(0))
         {

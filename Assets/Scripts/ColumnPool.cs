@@ -45,8 +45,7 @@ public class ColumnPool : MonoBehaviour {
         float spawnYPosition = Random.Range(columnMin, columnMax);
         columns[currentColumn].transform.position = new Vector2(spawnXPosition, spawnYPosition);
 
-        currentColumn++;
-        if (currentColumn >= columnPoolSize)
+        if (++currentColumn >= columnPoolSize)
         {
             currentColumn = 0;
         }
